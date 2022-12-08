@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/songs 
+
+###
+GET http://localhost:3000/songs/2
+
+###
+POST http://localhost:3000/songs
+Content-type: application/json
+
+{
+  "title": "Habiba",
+  "album": "Single",
+  "artist": "Boef",
+  "year": "2019"
+}
+
+###
+PATCH http://localhost:3000/songs/4
+Content-type: application/json
+
+{
+"title": "Habiba",
+"album": "Slaaptakort",
+"artist": "Boef",
+"year": "2017"
+}
+
+###
+DELETE http://localhost:3000/songs/
