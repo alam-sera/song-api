@@ -28,8 +28,8 @@ class SongsController < ApplicationController
     song.album = params[:album] || song.album
     song.artist = params[:artist] || song.artist
     song.year = params[:year] || song.year
-
-    render json: {message: "hi"}
+    song.save
+    render json: song 
   end
   
   def delete
